@@ -38,7 +38,7 @@ Execution
 ```shell
 sip
 ```
-Enter the interface you want to sniff.
+Enter the interface no you want to sniff.
 #### General interface are
 * eth0
 * em1
@@ -51,5 +51,6 @@ Live Sniffing
 * Open the browser and type the following address
 
   http://machineip:8000
-
+  The port address can be changed in server.js
+  
 ![stamen](http://i980.photobucket.com/albums/ae283/pankajr141/sniffmap_zps4120a71a.png)
