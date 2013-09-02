@@ -19,6 +19,8 @@ def data_entry():
     path = os.path.join(path , "../data")
     ifilepath = os.path.join(path, 'incoming')
     ignorefile = os.path.join(path, 'ignorelist')
+    if not os.path.exists(ifilepath):
+        return
     echomsg('Entering data')
     if not Database().checkDB():
        echomsg('Creating Db')
