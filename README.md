@@ -18,6 +18,7 @@ yum install npm                --Fedora
 #### 3. folium
 ```shell
 $ pip install folium 
+$ pip install pandas 
 ```
 #### 4. pcap library
    http://www.linuxfromscratch.org/blfs/view/svn/basicnet/libpcap.html
