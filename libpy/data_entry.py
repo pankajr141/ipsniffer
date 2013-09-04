@@ -21,7 +21,6 @@ def data_entry():
     ignorefile = os.path.join(path, 'ignorelist')
     if not os.path.exists(ifilepath):
         return
-    echomsg('Entering data')
     if not Database().checkDB():
        echomsg('Creating Db')
     iplist = open(ifilepath).readlines()
@@ -29,7 +28,6 @@ def data_entry():
     lineno = 0
     if Database().getlastline():
        lineno = Database().getlastline()[0] + 1
-    echomsg("lineno: %d" % lineno)
     generate_counter = 0   
  
     len_iplist =  len(iplist)

@@ -27,20 +27,20 @@ class Database:
          return False
       return True      
 
-  def updateDB(self, ip):
+  def updateDB(self, ip_v):
     con = lite.connect(datafilepath)
     with con:
       cur = con.cursor()
-      cur.execute("update packetinfo set count=count+1 where ip='%s'" % ip)
+      cur.execute("update packetinfo set count=count+%d where ip='%s'" % (ip_v.extra, ip_v.ip))
       con.commit()
 
   def insertDB(self, ip_v): #, lastaccesstime):
     con = lite.connect(datafilepath)
     with con:
       cur = con.cursor()
-      count = 1
-      con.execute("insert into packetinfo values ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%d')"%(ip_v.city, 
-                      ip_v.loc, ip_v.ip, ip_v.region, ip_v.hostname, ip_v.phone, ip_v.country, ip_v.org, ip_v.postal, count))
+      #ip_v.display()
+      con.execute("insert into packetinfo values (\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%d\")"%(ip_v.city, 
+                      ip_v.loc, ip_v.ip, ip_v.region, ip_v.hostname, ip_v.phone, ip_v.country, ip_v.org, ip_v.postal, ip_v.extra))
       con.commit()
 
   def checkDB(self):

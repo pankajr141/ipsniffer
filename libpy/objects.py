@@ -12,3 +12,8 @@ class ipobj:
         self.org = org
         self.postal = postal
         self.extra = extra
+    def display(self):
+        if not self.extra: 
+            self.extra = 0 
+        print "%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%d" % (self.city,self.loc,self.ip,self.region,
+               self.hostname,self.phone,self.country,self.org,self.postal,self.extra)

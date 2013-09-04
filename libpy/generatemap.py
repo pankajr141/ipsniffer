@@ -23,7 +23,7 @@ def generatemap():
     livepath = os.path.join(path, 'live.html')
     blivepath = os.path.join(path, 'live_b.html')
 
-    echomsg('Generating map')    
+    #echomsg('Generating map')    
     map_v = folium.Map(location=[28.5700, 77.3200], tiles='Mapbox Control Room', zoom_start=2,max_zoom=8, width="100%", height = "100%")
     ipobj_arr = Database().getobjects()
     for ip_v in ipobj_arr:
