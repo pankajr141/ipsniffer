@@ -12,13 +12,15 @@ yum install sqlite
 ```shell
 yum install npm                --Fedora
 ```
+
    for other distro Please find following link
    https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
 
 #### 3. folium
 ```shell
-$ pip install folium 
-$ pip install pandas 
+$ pip install folium
+$ pip install numpy    or yum install numpy
+$ pip install pandas   or yum install python-pandas
 ```
 #### 4. pcap library
    http://www.linuxfromscratch.org/blfs/view/svn/basicnet/libpcap.html
