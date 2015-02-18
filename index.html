@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Ipsniffer by pankajr141</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Ipsniffer</h1>
+        <h2>The Tool is a sniffer which sniffs the internet packets in the system and provide a web interface to display the location of origin of packets. The Packets are displayed in their geographical location through a map. The tool was initially made for raspberry pi</h2>
+        <a href="https://github.com/pankajr141/ipsniffer" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="ip-sniffer" class="anchor" href="#ip-sniffer" aria-hidden="true"><span class="octicon octicon-link"></span></a>IP SNIFFER</h1>
+
+<h2>
+<a id="packages" class="anchor" href="#packages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Packages</h2>
+
+<h4>
+<a id="1-sqlite" class="anchor" href="#1-sqlite" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. sqlite</h4>
+
+<div class="highlight highlight-shell"><pre>yum install sqlite</pre></div>
+
+<h4>
+<a id="2-nodejs" class="anchor" href="#2-nodejs" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. node.js</h4>
+
+<div class="highlight highlight-shell"><pre>yum install npm                --Fedora</pre></div>
+
+<p>for other distro Please find following link
+   <a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager">https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager</a></p>
+
+<h4>
+<a id="3-folium" class="anchor" href="#3-folium" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. folium</h4>
+
+<div class="highlight highlight-shell"><pre>$ pip install folium
+$ pip install numpy    or yum install numpy
+$ pip install pandas   or yum install python-pandas</pre></div>
+
+<h4>
+<a id="4-pcap-library" class="anchor" href="#4-pcap-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. pcap library</h4>
+
+<p><a href="http://www.linuxfromscratch.org/blfs/view/svn/basicnet/libpcap.html">http://www.linuxfromscratch.org/blfs/view/svn/basicnet/libpcap.html</a></p>
+
+<h2>
+<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration</h2>
+
+<h4>
+<a id="1-ignorelist" class="anchor" href="#1-ignorelist" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. ignorelist</h4>
+
+<p>The list contain the ipaddress you dont want to sniff</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<div class="highlight highlight-shell"><pre>make</pre></div>
+
+<h2>
+<a id="execution" class="anchor" href="#execution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Execution</h2>
+
+<div class="highlight highlight-shell"><pre>sip</pre></div>
+
+<p>Enter the interface no you want to sniff.</p>
+
+<h4>
+<a id="general-interface-are" class="anchor" href="#general-interface-are" aria-hidden="true"><span class="octicon octicon-link"></span></a>General interface are</h4>
+
+<ul>
+<li>eth0</li>
+<li>em1</li>
+</ul>
+
+<h2>
+<a id="live-sniffing" class="anchor" href="#live-sniffing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Live Sniffing</h2>
+
+<ul>
+<li>
+<p>Open the browser and type the following address</p>
+
+<p>http://machineip:8000
+The port address can be changed in server.js</p>
+</li>
+</ul>
+
+<p><img src="http://i980.photobucket.com/albums/ae283/pankajr141/sniffmap_zps4120a71a.png" alt="stamen"></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/pankajr141/ipsniffer/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/pankajr141/ipsniffer/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/pankajr141/ipsniffer"></a> is maintained by <a href="https://github.com/pankajr141">pankajr141</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
